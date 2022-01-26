@@ -11,6 +11,7 @@
 		B275C2C827A1713300ACFA1E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B275C2C727A1713300ACFA1E /* ContentView.swift */; };
 		B275C2CA27A1713500ACFA1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B275C2C927A1713500ACFA1E /* Assets.xcassets */; };
 		B275C2CD27A1713500ACFA1E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B275C2CC27A1713500ACFA1E /* Preview Assets.xcassets */; };
+		B275C2D627A171EB00ACFA1E /* AnyCodable in Frameworks */ = {isa = PBXBuildFile; productRef = B275C2D527A171EB00ACFA1E /* AnyCodable */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B275C2D627A171EB00ACFA1E /* AnyCodable in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = "demo-conflicts";
+			packageProductDependencies = (
+				B275C2D527A171EB00ACFA1E /* AnyCodable */,
+			);
 			productName = "demo-conflicts";
 			productReference = B275C2C227A1713200ACFA1E /* demo-conflicts.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +118,9 @@
 				Base,
 			);
 			mainGroup = B275C2B927A1713200ACFA1E;
+			packageReferences = (
+				B275C2D427A171EB00ACFA1E /* XCRemoteSwiftPackageReference "AnyCodable" */,
+			);
 			productRefGroup = B275C2C327A1713200ACFA1E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -338,6 +346,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B275C2D427A171EB00ACFA1E /* XCRemoteSwiftPackageReference "AnyCodable" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Flight-School/AnyCodable";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B275C2D527A171EB00ACFA1E /* AnyCodable */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B275C2D427A171EB00ACFA1E /* XCRemoteSwiftPackageReference "AnyCodable" */;
+			productName = AnyCodable;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B275C2BA27A1713200ACFA1E /* Project object */;
 }
