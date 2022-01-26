@@ -115,22 +115,26 @@
 			buildConfigurationList = B275C2BD27A1713200ACFA1E /* Build configuration list for PBXProject "demo-conflicts" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
-			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
-				Base,
-			);
+            				en,
+            				Base,
+            			);
+			hasScannedForEncodings = 0;
+
 			mainGroup = B275C2B927A1713200ACFA1E;
 			packageReferences = (
 				B275C2D727A1752000ACFA1E /* XCRemoteSwiftPackageReference "swift-atomics" */,
 				B275C2DA27A1755500ACFA1E /* XCRemoteSwiftPackageReference "swift-protobuf" */,
 			);
-			productRefGroup = B275C2C327A1713200ACFA1E /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
 			targets = (
-				B275C2C127A1713200ACFA1E /* demo-conflicts */,
-			);
+            				B275C2C127A1713200ACFA1E /* demo-conflicts */,
+            			);
+
+			productRefGroup = B275C2C327A1713200ACFA1E /* Products */;
+			projectRoot = "";
+			projectDirPath = "";
+
+
 		};
 /* End PBXProject section */
 
