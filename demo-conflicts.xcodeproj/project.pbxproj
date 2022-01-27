@@ -13,6 +13,8 @@
 		B275C2CD27A1713500ACFA1E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B275C2CC27A1713500ACFA1E /* Preview Assets.xcassets */; };
 		B275C2D927A1752000ACFA1E /* Atomics in Frameworks */ = {isa = PBXBuildFile; productRef = B275C2D827A1752000ACFA1E /* Atomics */; };
 		B275C2DC27A1755500ACFA1E /* SwiftProtobuf in Frameworks */ = {isa = PBXBuildFile; productRef = B275C2DB27A1755500ACFA1E /* SwiftProtobuf */; };
+		B2C6F42B27A2440E00171810 /* b.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C6F42A27A2440E00171810 /* b.swift */; };
+		B2C6F42D27A2441E00171810 /* a.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C6F42C27A2441E00171810 /* a.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		B275C2C927A1713500ACFA1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B275C2CC27A1713500ACFA1E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B275C2CE27A1713500ACFA1E /* demo_conflicts.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = demo_conflicts.entitlements; sourceTree = "<group>"; };
+		B2C6F42A27A2440E00171810 /* b.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = b.swift; sourceTree = "<group>"; };
+		B2C6F42C27A2441E00171810 /* a.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = a.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 				B275C2C927A1713500ACFA1E /* Assets.xcassets */,
 				B275C2CE27A1713500ACFA1E /* demo_conflicts.entitlements */,
 				B275C2CB27A1713500ACFA1E /* Preview Content */,
+				B2C6F42A27A2440E00171810 /* b.swift */,
+				B2C6F42C27A2441E00171810 /* a.swift */,
 			);
 			path = "demo-conflicts";
 			sourceTree = "<group>";
@@ -115,29 +121,24 @@
 			buildConfigurationList = B275C2BD27A1713200ACFA1E /* Build configuration list for PBXProject "demo-conflicts" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
-			knownRegions = (
-            				en,
-            				Base,
-            			);
 			hasScannedForEncodings = 0;
-
+			knownRegions = (
+				en,
+				Base,
+			);
 			mainGroup = B275C2B927A1713200ACFA1E;
 			packageReferences = (
 				B275C2D727A1752000ACFA1E /* XCRemoteSwiftPackageReference "swift-atomics" */,
 				B275C2DA27A1755500ACFA1E /* XCRemoteSwiftPackageReference "swift-protobuf" */,
 			);
-			targets = (
-            				B275C2C127A1713200ACFA1E /* demo-conflicts */,
-            			);
-
 			productRefGroup = B275C2C327A1713200ACFA1E /* Products */;
-			projectRoot = "";
 			projectDirPath = "";
-
-
+			projectRoot = "";
+			targets = (
+				B275C2C127A1713200ACFA1E /* demo-conflicts */,
+			);
 		};
 /* End PBXProject section */
-
 
 /* Begin PBXResourcesBuildPhase section */
 		B275C2C027A1713200ACFA1E /* Resources */ = {
@@ -151,15 +152,15 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-
 /* Begin PBXSourcesBuildPhase section */
 		B275C2BE27A1713200ACFA1E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			    B275C2C627A1713300ACFA1E /* demo_conflictsApp.swift in Sources */,
+				B2C6F42B27A2440E00171810 /* b.swift in Sources */,
+				B275C2C627A1713300ACFA1E /* demo_conflictsApp.swift in Sources */,
 				B275C2C827A1713300ACFA1E /* ContentView.swift in Sources */,
-
+				B2C6F42D27A2441E00171810 /* a.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,11 +267,11 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
